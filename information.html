@@ -1,78 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="CSS/fonts.css">
-    <link rel="stylesheet" href="CSS/nav.css">
-    <link rel="stylesheet" href="CSS/information.css">
-    <link rel="stylesheet" href="CSS/background.css">
-
-    <title>Information - Chomptopia</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="CSS/fonts.css">
+<link rel="stylesheet" href="CSS/nav.css">
+<link rel="stylesheet" href="CSS/information.css">
+<link rel="stylesheet" href="CSS/background.css">
+<link rel="stylesheet" href="CSS/icons-minecraft-0.2.css">
+<title>Information - Chomptopia</title>
 </head>
 <body>
-    <!-- Navbar -->
-  <div class="topnav">
-    <a href="/">Home</a>
-    <a href="about">About</a>
-    <a href="https://discord.gg/nzyeEFKdw2">Discord</a>
-    <a href="https://icmc.rocks/">Main Website</a>
-    <a href="information" class="active">All Information</a>
-    <div class="dropdown">
-      <button class="dropbtn">Departments
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="/passports">Passports</a>
-        <a href="/DVA">DVA</a>
-        <a href="Citizenship">Citizenship</a>
-      <a href="/Immigration">Immigration</a>
-      </div>
-    </div> 
+<!-- Navbar -->
+<div class="topnav"> <a href="/">Home</a> <a href="about">About</a> <a href="https://discord.gg/nzyeEFKdw2">Discord</a> <a href="https://icmc.rocks/">Main Website</a> <a href="information" class="active">All Information</a>
+  <div class="dropdown">
+    <button class="dropbtn">Departments <i class="fa fa-caret-down"></i> </button>
+    <div class="dropdown-content"> <a href="/passports">Passports</a> <a href="/DVA">DVA</a> <a href="Citizenship">Citizenship</a> <a href="/Immigration">Immigration</a> </div>
   </div>
-
+</div>
 <h1>Information</h1>
 <div class="links">
   <h3>Local Authorities</h3>
-	<a href="">Find Your Local Authority</a>
+  <button type="button" class="collapsible">Find Your Local Authority</button>
+  <div class="content">
+    <p>Check what your local authority is by entering your postal code below.</p>
+    <form action="/checkPostCode" method="post" id="checkPostCode">
+      <input type="text" id="postCode" placeholder="GH1 1AA" maxlength="7" required="true" oninput="this.value = this.value.toUpperCase()">
+      <button type="submit">Check</button>
+      <p id="result"><br>
+      </p>
+    </form>
+  </div>
   <h3>Highways</h3>
-  <a href="">Road Works</a><br>
-  <a href="">Speed Limits</a><br>
-  <a href="">List of Major Roads</a>
+  <button type="button" class="collapsible">Road Works</button>
+  <div class="content">
+	  <p>Oh look! Another placeholder!</p>
+  </div>
+  <button type="button" class="collapsible">Speed Limits</button>
+  <div class="content">
+	  <p><i class="icon-minecraft icon-minecraft-gray-concrete"></i> 20 mph (30 km/h)</p>
+	  <p><i class="icon-minecraft icon-minecraft-black-concrete"></i> 30 mph (50 km/h)</p>
+	  <p><i class="icon-minecraft icon-minecraft-black-wool"></i> 40 mph (70 km/h)</p>
+	  <p><i class="icon-minecraft icon-minecraft-red-nether-bricks"></i> 50 mph (80 km/h)</p>
+	  <p><i class="icon-minecraft icon-minecraft-nether-bricks"></i> 60 mph (100 km/h)</p>
+	  <p><i class="icon-minecraft icon-minecraft-gray-terracotta"></i> 70 mph (110 km/h)</p>
+	  <p><i class="icon-minecraft icon-minecraft-black-terracotta"></i> 100 mph (160 km/h)</p>
+  </div>
+  <button type="button" class="collapsible">List of Major Roads</button>
+  <div class="content">
+    <p>• M2 to FR via Sandford<br>• M3 from Grass to Merseyfield</p>
+  </div>
   <br>
   <h3>Vehicles & DVA</h3>
-  <a href="">Steps to getting a license</a><br>
-  <a href="">How and where to take a driving test</a><br>
-  <a href="">How to buy a car</a><br>
-  <a href="">What licenses look like</a><br>
+  <a>Steps to getting a license</a><br>
+  <a>How and where to take a driving test</a><br>
+  <a>How to buy a car</a><br>
+  <a>What licenses look like</a><br>
   <br>
   <h3>Aircrafts & Chomptopian Aviatian Authority (CAA)</h3>
-  <a href="">Chomptopian Aviation Authority (CAA) (Planes)</a><br>
-  <a href="">Steps to Getting a license</a><br>
-  <a href="">How and where to take a driving test</a><br>
-  <a href="">How to buy a plane</a><br>
-  <a href="">What licenses look like</a><br>
-  <a href="">Where you can fly and where you can't</a><br>
-  <a href="">Locations of Aerodromes (Airports)</a><br>
+  <a>Chomptopian Aviation Authority (CAA) (Planes)</a><br>
+  <a>Steps to Getting a license</a><br>
+  <a>How and where to take a driving test</a><br>
+  <a>How to buy a plane</a><br>
+  <a>What licenses look like</a><br>
+  <a>Where you can fly and where you can't</a><br>
+  <a>Locations of Aerodromes (Airports)</a><br>
   <br>
   <h3>Mail & Post</h3>
-  <a href="">How to send things</a><br>	
-  <a href="">Post Codes</a><br>
+  <a>How to send things</a><br>
+  <a>Post Codes</a><br>
   <br>
   <h3>Immigration & Citizenship</h3>
-  <a href="">How to get a passport</a><br>
-  <a href="">Eligibility to get a passport</a><br>
-  <a href="">How to get citizenship if stateless</a><br>
-  <a href="">How to get citizenship if moving from another country</a><br>
+  <a>How to get a passport</a><br>
+  <a>Eligibility to get a passport</a><br>
+  <a>How to get citizenship if stateless</a><br>
+  <a>How to get citizenship if moving from another country</a><br>
   <br>
   <h3>Border Control</h3>
-  <a href="">How to enter Chomptopia from another country</a><br>
+  <a>How to enter Chomptopia from another country</a><br>
   <br>
   <h3>Bank of Chomptopia</h3>
-  <a href="">How to access your money</a><br>
-	<br>
+  <a>How to access your money</a><br>
 </div>
+<script src="Scripts/Collapsible.js"></script> 
+<script src="Scripts/PostCodeChecker.js"></script>
 </body>
 </html>

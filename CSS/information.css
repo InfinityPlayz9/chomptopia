@@ -13,3 +13,28 @@ h3 {
 .links {
     text-align: center;
 }
+
+.collapsible {
+	background-color: transparent;
+	border: none;
+	font-size: 16px;
+	text-decoration: underline;
+	color: #6fabff;
+    font-family: 'Montserrat';
+    font-weight: 600;
+	cursor: pointer;
+}
+
+.active, .collapsible:hover {
+  color: #4078ff;
+}
+
+.content {
+  padding: 0px 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #171717;
+  width: 45%;
+  margin: auto;
+}
