@@ -2,6 +2,6 @@ body {
     background-image: url("../Assets/night coswood.png");
     background-position: top center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
   }
