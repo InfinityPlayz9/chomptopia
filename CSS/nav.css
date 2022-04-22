@@ -1,3 +1,17 @@
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+html::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
 .topnav {
   overflow: hidden;
   background-color: transparent;
